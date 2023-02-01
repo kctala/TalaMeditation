@@ -13,6 +13,8 @@ body {
     flex-direction: column;
     font-weight: 200;
     margin: 0;
+    height: 100%;
+    width: 100%;
 }
 h1, h2, h3, h4, h5, p, span {
     margin: 0;
@@ -28,9 +30,10 @@ h3 {
 header {
     position: fixed;
     z-index: 100;
-    width: 96%;
-    background-color: #D4EDFE;
+    background-color: #d4edfea3;
     height: 5rem;
+    width: 100%;
+    box-sizing: border-box;
     padding: 0 2rem;
 }
 #top-nav {
@@ -66,8 +69,14 @@ header {
 #top-nav .dropdown a:hover {
     color: #366280;
 }
-#top-nav .hamburger {
+#top-nav .icon {
     height: 2rem;
+}
+#top-nav .profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
 }
 #top-nav .logo {
     font-family: 'Poiret One', cursive;
@@ -78,7 +87,8 @@ header {
 #main-content {
     position: relative;
     margin-top: 5rem;
-    width: 100%;
+    flex: 1;
+    overflow: auto;
 }
 
 /* //////// JOIN SECTION //////// */
@@ -124,22 +134,28 @@ header {
     padding: 5% 10%;
 }
 #community-section .container {
-    width: 100%;
     display: flex;
     align-items: center;
     gap: 3rem;
-    height: 30rem;
 }
 #community-section .text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
-    width: 200rem;
+    width: 250%;
     text-align: center;  
 }
 #community-section .text h4 {
     text-transform: uppercase;
+    font-size: 1.2rem;
+}
+#community-section .text h2 {
+    font-size: 2.1rem;
+    font-style: italic;
+}
+#community-section .text p {
+    font-size: 1.2rem;
 }
 #community-section .image-container {
     text-align: center;
@@ -168,6 +184,9 @@ header {
 #about-section .container {
     padding: 5% 20%;
 }
+#about-section .text h3 {
+    font-weight: 300;
+}
 
 /* //////// MEDITATE SECTION //////// */
 #meditate-section {
@@ -182,6 +201,6 @@ header {
     display: flex;
 }
 #meditate-section .container img {
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     width: 100%;
 }
