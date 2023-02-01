@@ -83,6 +83,21 @@ header {
     font-size: 1.25rem;
 }
 
+@media all and (max-width: 450px) {
+    header {
+        padding: 0 0.5rem;
+    }
+    #top-nav .menu span {
+        display: none;
+    }
+    #top-nav .profile span {
+        display: none;
+    }
+    #top-nav .logo h1 {
+        font-size: 1.6rem;
+    }
+}
+
 /* //////// MAIN CONTENT //////// */
 #main-content {
     position: relative;
@@ -129,6 +144,28 @@ header {
     border-color: rgb(167, 167, 167);
 }
 
+@media all and (max-width: 780px) {
+    #join-section .join button {
+        width: 8rem;
+    }
+}
+@media all and (max-width: 450px) {
+    #join-section .container {
+        height: 30rem;
+    }
+    #join-section .join {
+        height: 30rem;
+        padding: 8rem 1rem 0 1rem;
+        text-align: center;
+    }
+    #join-section .join h2 {
+        font-size: 1.75rem;
+    }
+    #join-section .join h3 {
+        font-size: 1.25rem;
+    }
+}
+
 /* //////// COMMUNITY SECTION //////// */
 #community-section {
     padding: 5% 10%;
@@ -136,7 +173,7 @@ header {
 #community-section .container {
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 3%;
 }
 #community-section .text {
     display: flex;
@@ -166,6 +203,34 @@ header {
     border-radius: 1rem;
 }
 
+@media all and (max-width: 780px) {
+    #community-section {
+    padding: 5% 5%;
+    }
+    #community-section .text {
+    width: 300%; 
+    }
+    #community-section .text h4 {
+    font-size: 1rem;
+    }
+    #community-section .text h2 {
+    font-size: 1.75rem;
+    font-style: italic;
+    line-height: 1.1;
+    }
+    #community-section .text p {
+    font-size: 1.05rem;
+    }
+}
+@media all and (max-width: 450px) {
+    #community-section {
+    padding: 13% 5%;
+    }
+    #community-section .image-container img {
+        display: none;
+    }
+}
+
 /* //////// POSTIT SECTION //////// */
 #postit-section {
     width: 100%;
@@ -180,12 +245,40 @@ header {
     border-top-right-radius: 1rem;
 }
 
+@media all and (max-width: 780px) {
+    #postit-section .container {
+    height: 30rem;
+    }
+}
+@media all and (max-width: 450px) {
+    #postit-section .container {
+    height: 20rem;
+    }
+}
+
 /* //////// ABOUT SECTION //////// */
 #about-section .container {
     padding: 5% 20%;
 }
 #about-section .text h3 {
     font-weight: 300;
+}
+@media all and (max-width: 780px) {
+    #about-section .container {
+        padding: 5% 10%;
+    }
+    #about-section .text h3 {
+        font-size: 1.25rem;
+    }
+}
+@media all and (max-width: 450px) {
+    #about-section .container {
+        padding: 10% 10%;
+    }
+    #about-section .text h3 {
+        font-size: 1.1rem;
+        text-align: center;
+    }
 }
 
 /* //////// MEDITATE SECTION //////// */
@@ -203,4 +296,12 @@ header {
 #meditate-section .container img {
     border-radius: 0.5rem;
     width: 100%;
+}
+
+@media all and (max-width: 450px) {
+    #meditate-section .container {
+        display: flex;
+        flex-direction: column;
+        padding: 0rem 2rem 2rem 2rem;
+    }
 }
