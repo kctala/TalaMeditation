@@ -1,0 +1,187 @@
+/* font-family: 'La Belle Aurore', cursive;
+font-family: 'Nunito', sans-serif;
+font-family: 'Poiret One', cursive;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Thasadith', sans-serif; */
+html {
+    font-size: 16px;
+    background-color: #D4EDFE;
+    font-family: 'Nunito', sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    font-weight: 200;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, p, span {
+    margin: 0;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+
+/* //////// HEADER //////// */
+header {
+    position: fixed;
+    z-index: 100;
+    width: 96%;
+    background-color: #D4EDFE;
+    height: 5rem;
+    padding: 0 2rem;
+}
+#top-nav {
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#top-nav .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+#top-nav .dropdown {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    margin-top: 8rem;
+}
+#top-nav .menu:hover .dropdown {
+    display: inline-block;
+    background-color: #d4edfe4b;
+    padding-right: 1rem;
+}
+#top-nav .dropdown li {
+    list-style-type: none;
+}
+#top-nav .dropdown a {
+    text-decoration: none;
+    color: black;
+}
+#top-nav .dropdown a:hover {
+    color: #366280;
+}
+#top-nav .hamburger {
+    height: 2rem;
+}
+#top-nav .logo {
+    font-family: 'Poiret One', cursive;
+    font-size: 1.25rem;
+}
+
+/* //////// MAIN CONTENT //////// */
+#main-content {
+    position: relative;
+    margin-top: 5rem;
+    width: 100%;
+}
+
+/* //////// JOIN SECTION //////// */
+#join-section {
+    display: flex;
+    justify-content: center;
+}
+#join-section .container {
+    background-image: url(./img/background1_trees-crop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1rem;
+    height: 50rem;
+    width: 95%;
+}
+#join-section .join {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 50rem;
+    padding-top: 16rem;
+    gap: 1rem;
+}
+#join-section .join button {
+    width: 10%;
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+    font-size: 0.95rem;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px lightgray;
+}
+#join-section .join button:hover {
+    background-color: #366280;
+    color: white;
+    border-color: rgb(167, 167, 167);
+}
+
+/* //////// COMMUNITY SECTION //////// */
+#community-section {
+    padding: 5% 10%;
+}
+#community-section .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    height: 30rem;
+}
+#community-section .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 200rem;
+    text-align: center;  
+}
+#community-section .text h4 {
+    text-transform: uppercase;
+}
+#community-section .image-container {
+    text-align: center;
+    height: 100%;
+}
+#community-section .image-container img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+/* //////// POSTIT SECTION //////// */
+#postit-section {
+    width: 100%;
+}
+#postit-section .container {
+    background-image: url(./img/mindfulness.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+/* //////// ABOUT SECTION //////// */
+#about-section .container {
+    padding: 5% 20%;
+}
+
+/* //////// MEDITATE SECTION //////// */
+#meditate-section {
+    width: 100%;
+}
+#meditate-section .container {
+    padding: 0 2rem 6rem 2rem;
+    display: flex;
+    gap: 1rem;
+}
+#meditate-section .image {
+    display: flex;
+}
+#meditate-section .container img {
+    border-radius: 1rem;
+    width: 100%;
+}
